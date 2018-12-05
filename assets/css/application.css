@@ -912,7 +912,7 @@ div:focus {
 
 .blue {
     background: #fbf5f3;
-    color: #FFF
+    color: #090909;
 }
 
 html {
@@ -3170,7 +3170,7 @@ img.featherlight-image.featherlight-inner {
 
 .piece-slide img {
     display: block;
-    height: 500px;
+    height: 450px;
     max-width: 100%;
     min-width: 100%;
     object-fit: cover;
@@ -3454,7 +3454,7 @@ img.featherlight-image.featherlight-inner {
 }
 
 .contact-link {
-    font-size: calc(100vw / 12);
+    font-size: calc(100vw / 15);
     font-weight: 500;
     color: #2646FF;
     display: inline-block;
