@@ -276,6 +276,10 @@ template {
     .offset-md-1 {
         margin-left: 8.3333333333%
     }
+
+    .offset-md-1-end {
+        margin-left: 9.5%
+    }
 }
 
 @media (min-width: 1024px) {
@@ -407,6 +411,10 @@ template {
 
 .justify-content-between {
     justify-content: space-between !important
+}
+
+.justify-content-end {
+    justify-content: flex-end !important;
 }
 
 .align-items-center,
@@ -1058,16 +1066,16 @@ a.text-1:hover {
 }
 
 .header-logo {
-    margin-right: 5rem;
-    width: 34px;
+    margin-right: 3.35rem;
+    width: 60px;
     min-width: 34px;
-    height: 34px;
+    height: 50px;
     display: inline-block;
     text-indent: -9999em;
     transform: scale(0.7);
     transform-origin: left center;
     filter: brightness(1);
-    background: url("../images/home.svg") 0 -566px
+    background: url("../img/final2.svg") no-repeat;
 }
 
 .header-navigation {
@@ -2802,8 +2810,8 @@ img.featherlight-image.featherlight-inner {
     }
 
     .poster-home .text-1 {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 1.625rem;
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.425rem;
         max-width: 650px
     }
 
@@ -3107,19 +3115,10 @@ img.featherlight-image.featherlight-inner {
     .project:nth-child(odd) {
         margin-top: -250px;
     }
-    /* .project:nth-child(6) {
-        margin-top: -112px;
-    }
-    .project:nth-child(8) {
-        margin-top: -100px;
-    }
-    .project:nth-child(9) {
-        margin-top: -411px;
-    }
 
     .project .image {
-        height: 800px;
-    } */
+        height: 900px;
+    }
 
     .work-stats .number {
         display: inline;
@@ -3170,7 +3169,7 @@ img.featherlight-image.featherlight-inner {
 
 .piece-slide img {
     display: block;
-    height: 450px;
+    height: 400px;
     max-width: 100%;
     min-width: 100%;
     object-fit: cover;
@@ -3632,38 +3631,7 @@ img.featherlight-image.featherlight-inner {
     }
 }
 
-.loupe-photos {
-    background: #fff;
-    text-align: center;
-    width: 100%;
-    padding: 0;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
 
-@media only screen and (min-width: 768px) {
-    .loupe-photos {
-        grid-gap: 30px;
-        padding: 0;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .loupe-photos img:first-child {
-        margin-bottom: 30px;
-    }
-} 
-
-.loupe-photos img {
-    width: 100%;
-}
-
-.loupe-photos>div:last-child {
-    object-fit: cover;
-}
 
 .video-thumb {
     position: relative;
@@ -3834,4 +3802,93 @@ img.featherlight-image.featherlight-inner {
     letter-spacing: -0.01em;
     line-height: 1.4em;
     color: #FFF;
+}
+
+/* .card {
+    height: 700px;
+    background-color: beige;
+} */
+
+@media (min-width: 1400px) {
+    .card {
+        min-height: 640px;
+        padding: 120px 60px 120px 60px;
+        background-color: beige;
+    }
+}
+
+.collage {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: (minmax(250px, 50vw))[2];
+    grid-template-rows: repeat(2, minmax(250px, 20vw));
+    grid-gap: 30px;
+    margin: auto;
+    width: 1800px;
+}
+
+.collage div:nth-child(even) {
+    -ms-grid-column-span: 2;
+    -ms-grid-column: auto;
+    grid-column: auto/span 2;
+}
+
+.collage div:last-child,
+.collage div:nth-child(odd) {
+    -ms-grid-column-span: 3;
+    -ms-grid-column: auto;
+    grid-column: auto/span 3;
+}
+
+.collage div,
+.collage div img {
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .collage {
+        -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+        -ms-grid-rows: (50vw)[2];
+        grid-template-rows: repeat(2, 50vw);
+    }
+
+    .collage div:nth-child(1),
+    .collage div:nth-child(3) {
+        -ms-grid-column-span: 4;
+        -ms-grid-column: auto;
+        grid-column: auto/span 4;
+    }
+    
+    .collage div:nth-child(-n+2) {
+        display: block;
+        -ms-grid-column-span: 3;
+        -ms-grid-column: auto;
+        grid-column: auto/span 3;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .collage {
+        padding: 0 10px;
+        grid-gap: 10px;
+    }
+}
+
+.security-box {
+    background-image: url(https://everchron.com/assets/images/content/in-house/security-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.image-gallery {
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 0px;
 }
