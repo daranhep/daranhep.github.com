@@ -73,24 +73,4 @@ $(document).ready(function () {
                 e.removeClass("mobile-footer")
         }).trigger("resize")
     }(jQuery);
-var version = detectIE();
-!1 === version || (version >= 12 ? $("body").addClass("ie-edge") : $("body").addClass("ie")),
-    $(".modal").on("show.bs.modal", function (t) {
-        $(this).addClass("d-flex")
-    }),
-    $(".modal").on("hidden.bs.modal", function (t) {
-        $(this).removeClass("d-flex")
-    }),
-    $("[data-target='#schedule']").click(function () {
-        fbq("track", "Lead")
-    }),
-    $("[data-video='132054446']").click(function () {
-        fbq("track", "ViewContent", {
-            content_ids: "introduction_video"
-        })
-    }),
-    $("[data-video='149039441']").click(function () {
-        fbq("track", "ViewContent", {
-            content_ids: "inhouse_video"
-        })
-    });
+
