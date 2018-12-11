@@ -9,15 +9,35 @@
 
     <link rel="stylesheet" rel="preload" as="style" href="./assets/css/application.css">
     <script>
-        (function(d) {
-    var config = {
-      kitId: 'ezp7qhd',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+        (function (d) {
+            var config = {
+                    kitId: 'ezp7qhd',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 
     <meta name="msapplication-TileColor" content="#2646ff">
     <meta name="theme-color" content="#ffffff">
@@ -78,18 +98,21 @@
                         <div class="row align-items-center flex-grow">
                             <div class="col-12 col-md-7 col-lg-6 poster-home-text">
                                 <h1 class="wbr mb-1 mb-md-2"><span>The Official</span> <span>Wedding</span></h1>
-                                <p class="text-1 mb-1 mb-md-2">We are content production team of creative individuals,
-                                    based in
+                                <p class="text-1">We are content production team of creative individuals, based in
                                     Southern California, willing to travel
                                     and work directly with clients to create one-of-a-kind vision, make ideas come to
                                     life, and capture the beauty and
                                     emotions, that truly only happens once in a life time, so that our client can share
                                     it with the world.</p>
+                            </div>
+                        </div>
+                        <div class="row poster-home-project d-none d-md-block">
+                            <div class="col-12 col-sm-8 col-md-6 d-flex">
+                                <span class="descriptor">Watch Video</span>
+                                <a href="" data-go="work" title="Read case study">
+                                    <span class="client">Watch</span>
+                                    <span class="description">Video</span>
                                 </a>
-                                <div class="d-flex flex-wrap">
-                                    <button class="button-link button-link-video start-video" data-video="305467289">Watch
-                                        the video</button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -100,13 +123,60 @@
                     </div>
                 </div>
                 <div class="row spectrum py-3 py-sm-4 py-md-5 py-lg-6 py-xl-7">
-                    <div class="collage">
-                        <div style="background-image: url('assets/img/gallery/DSC01321-sm_2x.jpg')"></div>
-                        <div style="background-image: url('assets/img/DJ-1399_u9fqtt/DJ-1399_u9fqtt_c_scale,w_825.jpg')"></div>
-                        <div style="background-image: url('assets/img/DSC02101_dyh4gj/DSC02101_dyh4gj_c_scale,w_1132.jpg')"></div>
-                        <div style="background-image: url('assets/img/gallery/DJ-1139-md_2x.jpg')"></div>
-                        <div style="background-image: url('assets/img/gallery/DSC07844 copy-md_1x.jpg')"></div>
-                        <div style="background-image: url('assets/img/gallery/DSC03681-md_1x.jpg')"></div>
+                    <div class="col-12">
+                        <h2 class="headline-2 mb-2 mb-sm-3 mb-lg-5 mb-xl-6">Our Process</h2>
+                    </div>
+                    <div class="col-12 col-lg-4 spectrum-illustration">
+                        <div class="illustration illustration-web">
+
+                        </div>
+                        <div>
+                            <h3 class="headline-4 mb-1 mb-lg-2">Collaborative Planning</h3>
+                            <p class="text-2">Our content planning team will work with you to create and understand
+                                your personal story.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-3 mt-lg-0 spectrum-illustration">
+                        <div class="illustration illustration-mobile">
+
+                        </div>
+                        <div>
+                            <h3 class="headline-4 mb-1 mb-lg-2">Content Creation</h3>
+                            <p class="text-2">Our videographers and photographers will work with you to capture your
+                                moments</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-3 mt-lg-0 spectrum-illustration">
+                        <div class="illustration illustration-dev">
+
+                        </div>
+                        <div>
+                            <h3 class="headline-4 mb-1 mb-lg-2">Creating A Story</h3>
+                            <p class="text-2">Together we will put your story together in line with your vision, ready
+                                to be shared with all your
+                                loved ones</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="break-out subtle">
+                    <div class="container-fluid">
+                        <div class="row spectrum py-3 py-sm-4 py-md-5 py-lg-6 py-xl-7">
+                            <div class="collage">
+                                <div style="background-image: url('assets/img/gallery/DSC01321-sm_2x.jpg')"></div>
+                                <div style="background-image: url('assets/img/DJ-1399_u9fqtt/DJ-1399_u9fqtt_c_scale,w_825.jpg')"></div>
+                                <div style="background-image: url('assets/img/DSC02101_dyh4gj/DSC02101_dyh4gj_c_scale,w_1132.jpg')"></div>
+                                <div style="background-image: url('assets/img/gallery/DJ-1139-md_2x.jpg')"></div>
+                                <div style="background-image: url('assets/img/gallery/DSC07844 copy-md_1x.jpg')"></div>
+                                <div style="background-image: url('assets/img/gallery/DSC03681-md_1x.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="break-out subtle">
+                    <div class="container-fluid">
+<figure class="video"><iframe src="https://player.vimeo.com/video/169809377" frameborder="0"
+                                webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" width="812"
+                                height="508"></iframe></figure>
                     </div>
                 </div>
             </div>
@@ -201,9 +271,8 @@
     </footer>
 
     <div class="barba-layer" style="transform:translateY(100%)"></div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script async src="https://ivomynttinen.com/assets/js/min/application.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async src="assets/js/application.min.js"></script>
     <script sync src="assets/js/video.js"></script>
 
 </body>
