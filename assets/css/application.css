@@ -8,6 +8,10 @@ body {
 }
 
 h1 {
+    font-family: bebas-neue-by-fontfabric,
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 2em;
     margin: 0.67em 0
 }
@@ -925,8 +929,9 @@ body {
 
 body {
     overflow-x: hidden;
-    font-family: "aktiv-grotesk", "Helvetica Neue", "Helvetica", sans-serif;
-    letter-spacing: -0.025em;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     position: relative
 }
 
@@ -1021,11 +1026,11 @@ p:focus {
     outline: none
 }
 
-h1,
+/* h1,
 .headline-2,
 .headline-3 {
     letter-spacing: -0.026em
-}
+} */
 
 a {
     text-decoration: none;
@@ -1039,6 +1044,9 @@ h1 {
 }
 
 .headline-2 {
+    font-family: bebas-neue-by-fontfabric,
+    sans-serif;
+    font-style: normal;
     font-size: 3.25rem;
     font-weight: 500
 }
@@ -1049,6 +1057,9 @@ h1 {
 }
 
 .headline-4 {
+    font-family: bebas-neue-by-fontfabric,
+    sans-serif;
+    font-style: normal;
     font-size: 1.775rem;
     font-weight: 500
 }
@@ -1125,9 +1136,11 @@ a.text-1:hover {
 }
 
 .header-navigation a {
+    font-family: bebas-neue-by-fontfabric,
+    sans-serif;
+    font-style: normal;
     display: inline-block;
     color: rgba(0, 0, 0, 0.6);
-    letter-spacing: -0.01em
 }
 
 .header-navigation a:hover {
@@ -1403,7 +1416,7 @@ a.text-1:hover {
     }
 
     .header-navigation {
-        font-size: 1.125rem
+        font-size: 1.325rem
     }
 
     .mobile-menu {
@@ -1577,9 +1590,11 @@ a.text-1:hover {
 }
 
 .cta-headline {
+    font-family: bebas-neue-by-fontfabric,
+    sans-serif;
+    font-style: normal;
     font-size: 5rem;
     font-weight: 500;
-    letter-spacing: -0.026em
 }
 
 .cta-subline {
