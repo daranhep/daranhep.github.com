@@ -117,7 +117,7 @@ button:-moz-focusring,
 }
 
 .button-link-video {
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .button-link {
@@ -128,23 +128,32 @@ button:-moz-focusring,
     background: none;
     font-family: "Inter UI", sans-serif;
     line-height: 30px;
-    padding: 0 0 0 48px;
+    padding: 0 30px 0 0;
     cursor: pointer;
     transition: .2s;
 }
 
-.button-link-video:before {
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cg fill='none' fill-rule='evenodd' transform='translate(2 6)'%3E%3Cpath stroke='%235155EF' stroke-linejoin='round' d='M25.9559492,3.88389074 C25.9559492,3.88389074 25.704465,2.10454328 24.9174459,1.32814366 C23.9223643,0.292747508 22.8072699,0.292747508 22.2934459,0.227850883 C18.6303395,-0.0311456473 13.1199999,0.00130266516 13.1199999,0.00130266516 C13.1199999,0.00130266516 7.63137111,-0.0311456473 3.96886781,0.227850883 C3.4658993,0.292747508 2.35080485,0.292747508 1.35572327,1.32814366 C0.568101121,2.10454328 0.305761431,3.88389074 0.305761431,3.88389074 C0.305761431,3.88389074 0.0434217417,5.98713136 0,8.06854311 L0,10.2467098 C0.0434217417,12.339331 0.305761431,14.4207427 0.305761431,14.4207427 C0.305761431,14.4207427 0.568101121,16.2000902 1.35572327,16.9876992 C2.35080485,18.011886 3.65164787,17.9800276 4.24206294,18.0874021 C6.29735871,18.2927114 12.8902265,18.3357791 13.1199999,18.3357791 C13.1199999,18.3357791 18.641195,18.3463986 22.3043013,18.0874021 C22.8072699,18.0230954 23.9223643,18.0230954 24.9174459,16.9876992 C25.704465,16.2112996 25.9668046,14.4313622 25.9668046,14.4313622 C25.9668046,14.4313622 26.2291443,12.339331 26.2399998,10.2579192 L26.2399998,8.07916256 C26.2182889,5.98713136 25.9559492,3.88389074 25.9559492,3.88389074 Z'/%3E%3Cpolygon fill='%235155EF' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049'/%3E%3C/g%3E%3C/svg%3E");
+.button-link-video:hover {
+    color: rgba(255, 255, 255, 0.9);
 }
 
-.button-link:before {
+.button-link:hover:after {
+    transform: scale(1.8);
+}
+
+.button-link-video:after {
+    background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'> <g fill='none' fill-rule='evenodd' transform='translate(2 6)'> <polygon fill='white' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049' /> </g> </svg>");
+}
+
+.button-link:after {
     width: 30px;
     height: 30px;
     content: "";
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     transition: .2s;
+    transform: scale(1.1);
 }
 
 fieldset {
@@ -4259,6 +4268,28 @@ img.featherlight-image.featherlight-inner {
     position: relative;
     background-color: #ffffff;
     box-shadow: 0 2px 24px rgba(47, 47, 79, 0.2);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #090909;
+}
+
+.modal-backdrop.in {
+    opacity: 0.7;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.modal-backdrop.in {
+    opacity: 0.7;
 }
 
 .overlay {
