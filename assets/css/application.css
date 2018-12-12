@@ -1529,10 +1529,10 @@ a.text-1:hover {
     content: "";
     position: absolute;
     width: 14px;
-    height: 14px;
+    height: 10px;
     margin-left: -35px;
     top: 9px;
-    background: url("../images/home.svg") 0 -630px
+    background: url('../img/final3.svg');
 }
 
 .footer-about .subline {
