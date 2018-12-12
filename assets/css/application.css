@@ -3198,6 +3198,15 @@ img.featherlight-image.featherlight-inner {
     margin-bottom: 20px
 }
 
+.video-layout {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px
+}
+
 .masonry-layout:active {
     -webkit-filter: brightness(1.1);
     filter: brightness(1.1)
