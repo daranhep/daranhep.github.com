@@ -1528,10 +1528,10 @@ a.text-1:hover {
 .footer-about .title:before {
     content: "";
     position: absolute;
-    width: 14px;
-    height: 10px;
-    margin-left: -35px;
-    top: 9px;
+    width: 26px;
+    height: 18px;
+    margin-left: -38px;
+    top: 4px;
     background: url('../img/final3.svg');
 }
 
