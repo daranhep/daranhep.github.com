@@ -1,5 +1,5 @@
 html {
-    line-height: 1.15;
+    /* line-height: 1.15; */
     -webkit-text-size-adjust: 100%
 }
 
@@ -133,12 +133,16 @@ button:-moz-focusring,
     transition: .2s;
 }
 
+.button-link:focus {
+    outline: none;
+}
+
 .button-link-video:hover {
     color: rgba(255, 255, 255, 0.9);
 }
 
 .button-link:hover:after {
-    transform: scale(1.8);
+    transform: translateX(5px) scale(1.5);
 }
 
 .button-link-video:after {
@@ -153,7 +157,7 @@ button:-moz-focusring,
     right: 0;
     top: 0;
     transition: .2s;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 fieldset {
@@ -4298,4 +4302,10 @@ img.featherlight-image.featherlight-inner {
 
 .no-zoom {
     transform: none;
+}
+
+svg#e253bb82-9ddd-45b7-a7d7-96bd734411e4 {
+    height: 34px;
+    margin-right: 4.1rem;
+    margin-bottom: .4rem;
 }
