@@ -117,16 +117,16 @@ button:-moz-focusring,
 }
 
 .button-link-video {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(0, 0, 0);
 }
 
 .button-link {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: calc(100vw / 19);
+    font-weight: 400;
     border: none;
     position: relative;
     background: none;
-    font-family: "Inter UI", sans-serif;
+    font-family: futura-pt, sans-serif;
     line-height: 30px;
     padding: 0 30px 0 0;
     cursor: pointer;
@@ -146,7 +146,7 @@ button:-moz-focusring,
 }
 
 .button-link-video:after {
-    background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'> <g fill='none' fill-rule='evenodd' transform='translate(2 6)'> <polygon fill='white' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049' /> </g> </svg>");
+    background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'> <g fill='none' fill-rule='evenodd' transform='translate(2 6)'> <polygon fill='black' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049' /> </g> </svg>");
 }
 
 .button-link:after {
@@ -158,6 +158,15 @@ button:-moz-focusring,
     top: 0;
     transition: .2s;
     transform: scale(1.4);
+}
+
+@media (min-width: 768px) {
+    .button-link-video:after {
+        background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'> <g fill='none' fill-rule='evenodd' transform='translate(2 6)'> <polygon fill='white' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049' /> </g> </svg>");
+    }
+    .button-link-video {
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 fieldset {
