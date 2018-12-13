@@ -3765,7 +3765,7 @@ img.featherlight-image.featherlight-inner {
 @media (min-width: 576px) {
     .contact-map {
         height: calc(100vw / 2);
-        background-position: center center
+        background-position: 50% 35%
     }
 }
 
