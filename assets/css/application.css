@@ -972,7 +972,8 @@ div:focus {
 
 .dark {
     background: #090909;
-    color: #FFF
+    color: #FFF:
+    background-color:#090909;
 }
 
 .subtle {
