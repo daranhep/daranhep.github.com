@@ -2601,7 +2601,13 @@ img.featherlight-image.featherlight-inner {
 }
 
 .poster-home-project {
-    padding: 20px 0 3.125rem 0
+    padding: 0;
+}
+
+@media(min-width: 768px) {
+    .poster-home-project {
+        padding: 20px 0 3.125rem 0;
+    }
 }
 
 .poster-home-project .descriptor,
