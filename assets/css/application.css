@@ -945,8 +945,7 @@ template {
     box-sizing: border-box
 }
 
-html,
-body {
+html {
     background: #FFF;
     color: #000;
     -webkit-font-smoothing: antialiased
@@ -957,7 +956,8 @@ body {
     font-family: 'futura-pt', sans-serif;
     font-weight: 500;
     font-style: normal;
-    position: relative
+    position: relative;
+    -webkit-font-smoothing: antialiased
 }
 
 body.menu-open {
