@@ -1469,7 +1469,8 @@ a.text-1:hover {
 
 .footer {
     font-size: 1.25rem;
-    font-weight: 700
+    font-weight: 700;
+    overflow: auto;
 }
 
 .footer a {
