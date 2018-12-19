@@ -1467,10 +1467,9 @@ a.text-1:hover {
     }
 }
 
-.footer {
+/* .footer {
     font-size: 1.25rem;
     font-weight: 700;
-    overflow: auto;
 }
 
 .footer a {
@@ -1622,7 +1621,7 @@ a.text-1:hover {
     .footer-legal a {
         margin-right: 40px
     }
-}
+} */
 
 .cta {
     text-align: center
