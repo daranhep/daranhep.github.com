@@ -2379,7 +2379,7 @@ body.modal-open {
     width: 50px;
     height: 50px;
     z-index: 1;
-    background: url("../img/featherlight-loader.gif");
+    background: url("../images/featherlight-loader.gif");
     background-size: 50px 50px
 }
 
