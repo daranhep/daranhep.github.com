@@ -1614,7 +1614,7 @@ a.text-1:hover {
     sans-serif;
     font-style: normal;
     font-size: 5rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .cta-subline {
@@ -2919,7 +2919,7 @@ img.featherlight-image.featherlight-inner {
 
     .poster-home .text-1 {
         color: rgba(255, 255, 255, 1);
-        font-size: 1.425rem;
+        font-size: 1.55rem;
         max-width: 650px
     }
 
