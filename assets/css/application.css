@@ -973,6 +973,7 @@ div:focus {
 .dark {
     color: #FFF;
     background-color: #090909 !important;
+    min-height: 1px;
 }
 
 .subtle {
