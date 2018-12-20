@@ -3237,7 +3237,7 @@ img.featherlight-image.featherlight-inner {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 20px
+    margin-bottom: 15px
 }
 
 .video-layout {
@@ -3246,7 +3246,7 @@ img.featherlight-image.featherlight-inner {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 20px
+    margin-bottom: 15px
 }
 
 .masonry-layout:active {
@@ -3306,7 +3306,6 @@ img.featherlight-image.featherlight-inner {
 @media (min-width: 768px) {
 
     .masonry-layout {
-        width: calc(50% - 2.5%);
         margin-bottom: 15px;
     }
 
@@ -3316,6 +3315,46 @@ img.featherlight-image.featherlight-inner {
 
     .masonry-layout .image {
         height: calc(100vw * 0.6)
+    }
+
+    .w-20 {
+        width: calc(33.33333% - 10px)
+    }
+
+    .w-30 {
+        width: calc(30% - 7.5px)
+    }
+
+    .w-50 {
+        width: calc(50% - 7.5px)
+    }
+
+    .w-60 {
+        width: calc(33.333333% - 10px)
+    }
+
+    .w-70 {
+        width: calc(70% - 7.5px)
+    }
+
+    .w-100 {
+        width: calc(100%)
+    }
+
+    .masonry-layout .h-800 {
+        height: 600px;
+    }
+
+    .masonry-layout .h-350 {
+        height: 350px;
+    }
+
+    .masonry-layout .h-500 {
+        height: 350px;
+    }
+
+    .masonry-layout .h-550 {
+        height: 350px;
     }
 }
 
