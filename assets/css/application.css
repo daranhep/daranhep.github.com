@@ -503,6 +503,10 @@ template {
     align-items: center !important
 }
 
+.featherlight .featherlight-content {
+    justify-content: center !important
+}
+
 @media (min-width: 768px) {
     .justify-content-md-center {
         justify-content: center !important
@@ -2474,9 +2478,10 @@ body.modal-open {
 .featherlight-first-slide.featherlight-last-slide .featherlight-next {
     display: none
 }
-
-img.featherlight-image.featherlight-inner {
-    margin: auto;
+@media (max-width: 1024px) {
+    img.featherlight-image.featherlight-inner {
+        margin: 50% auto;
+    }
 }
 
 .format pre code {
