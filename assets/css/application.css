@@ -3360,19 +3360,19 @@ img.featherlight-image.featherlight-inner {
 
 @media (min-width: 1400px) {
     .w-20 {
-        width: calc(20% - 7.5px)
+        width: calc(20% - 10px)
     }
     .w-30 {
-        width: calc(30% - 7.5px)
+        width: calc(30% - 10px)
     }
     .w-50 {
         width: calc(50% - 7.5px)
     }
     .w-60 {
-        width: calc(60% - 7.5px)
+        width: calc(60% - 10px)
     }
     .w-70 {
-        width: calc(70% - 7.5px)
+        width: calc(70% - 10px)
     }
     .w-100 {
         width: calc(100%)
