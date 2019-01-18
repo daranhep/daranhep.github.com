@@ -75,9 +75,11 @@ button:-moz-focusring,
 }
 
 .button-link {
+  text-align: center;
   font-size: calc(100vw / 21);
   font-weight: 500;
-  border: none;
+  border-radius: 2px;
+  border-width: 3px;
   position: relative;
   background: none;
   font-family: "futura-pt", sans-serif;
@@ -87,19 +89,24 @@ button:-moz-focusring,
   transition: 0.2s;
 }
 
+.white {
+  border-color: #fff;
+}
+
 .button-link:focus {
   outline: none;
 }
 
 .button-link-video:hover {
-  color: rgba(255, 255, 255, 0.9);
+  color: #090909;
+  background-color: #fff;
 }
 
 .button-link:hover:after {
   transform: translateX(5px) scale(1.5);
 }
 
-.button-link-video:after {
+/* .button-link-video:after {
   background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'> <g fill='none' fill-rule='evenodd' transform='translate(2 6)'> <polygon fill='black' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049' /> </g> </svg>");
 }
 
@@ -112,17 +119,20 @@ button:-moz-focusring,
   top: 0;
   transition: 0.2s;
   transform: scale(1.4);
-}
+} */
 
 @media (min-width: 768px) {
   .button-link-video:after {
     background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'> <g fill='none' fill-rule='evenodd' transform='translate(2 6)'> <polygon fill='white' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049' /> </g> </svg>");
   }
   .button-link-video {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
   }
   .button-link {
-    font-size: 1.25rem;
+    font-size: 2.25rem;
+    padding: 1rem 1.125rem;
+    margin-right: 30px;
+    min-width: 250px;
   }
 }
 
