@@ -215,22 +215,24 @@
             </div>
           </div>
           <div class="masonry-row d-flex flex-wrap justify-content-between">
-            <div class="masonry-layout w-50" style="background-color:#7A7B90">
-              <button class="start-video" data-video="309422219">
-                <div class="image h-550">
-                  <img
-                    class="lazyload lazyfade"
-                    data-srcset="
+            <div
+              class="masonry-layout w-50 start-video"
+              style="background-color:#7A7B90"
+              data-video="309422219"
+            >
+              <div class="image h-550">
+                <img
+                  class="lazyload lazyfade"
+                  data-srcset="
                         ./assets/img/couple6/DannyandSormeh-5804-lg_2x.jpg 400w,
                         ./assets/img/couple6/DannyandSormeh-5804-lg_2x.jpg 1121w,
                         ./assets/img/couple6/DannyandSormeh-5804-lg_2x.jpg 1679w,
                         ./assets/img/couple6/DannyandSormeh-5804-lg_2x.jpg 2000w"
-                    data-sizes="(min-width: 1024px) 30vw, 100vw"
-                    data-src="./assets/img/couple6/DannyandSormeh-5804-lg_2x.jpg"
-                    alt="Editing the profile"
-                  />
-                </div>
-              </button>
+                  data-sizes="(min-width: 1024px) 30vw, 100vw"
+                  data-src="./assets/img/couple6/DannyandSormeh-5804-lg_2x.jpg"
+                  alt="Editing the profile"
+                />
+              </div>
             </div>
             <div class="masonry-layout w-50" style="background-color:#5A656E">
               <a
@@ -345,6 +347,23 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade align-items-center"
+      id="video-modal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog video">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close video-close">Close</button>
+          </div>
+          <div class="modal-body embed-container">
+            <div id="video-frame"></div>
           </div>
         </div>
       </div>
