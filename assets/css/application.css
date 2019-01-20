@@ -419,11 +419,6 @@ button:-moz-focusring,
   max-width: 1800px;
 }
 
-.p-30 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 @media (min-width: 576px) {
   .container-fluid {
     padding-right: 5%;
@@ -489,6 +484,11 @@ button:-moz-focusring,
   .d-lg-flex {
     display: flex !important;
   }
+}
+
+.p-30 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .mt-1,
@@ -572,6 +572,11 @@ button:-moz-focusring,
 }
 
 @media (min-width: 576px) {
+  .p-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .mb-sm-2 {
     margin-bottom: 40px !important;
   }
