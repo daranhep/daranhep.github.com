@@ -84,7 +84,6 @@ button:-moz-focusring,
   background: none;
   font-family: "futura-pt", sans-serif;
   line-height: 30px;
-  padding: 0 30px 0 0;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -121,12 +120,19 @@ button:-moz-focusring,
   transform: scale(1.4);
 } */
 
+.button-link {
+  font-size: 1.325rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 10px;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .button-link-video:after {
     background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'> <g fill='none' fill-rule='evenodd' transform='translate(2 6)'> <polygon fill='white' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049' /> </g> </svg>");
   }
   .button-link-video {
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff;
   }
   .button-link {
     font-size: 2.25rem;
@@ -502,7 +508,7 @@ button:-moz-focusring,
 }
 
 .my-30 {
-  margin-bottom: 30px !important;
+  margin-bottom: 15px !important;
 }
 
 .mt-2 {
@@ -575,6 +581,11 @@ button:-moz-focusring,
   .p-30 {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 10px;
+  }
+
+  .my-30 {
+    margin-bottom: 25px !important;
   }
 
   .mb-sm-2 {
