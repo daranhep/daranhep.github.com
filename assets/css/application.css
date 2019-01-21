@@ -1073,7 +1073,7 @@ a.text-1:hover {
   transform: scale(0.7);
   transform-origin: left center;
   filter: brightness(1);
-  background: url("../img/final2.svg") no-repeat;
+  background: url("../img/svg/SVG/footer_logo.svg") no-repeat;
 }
 
 .header-navigation {
