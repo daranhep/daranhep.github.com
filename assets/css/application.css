@@ -1754,6 +1754,10 @@ a.text-1:hover {
   position: relative;
 }
 
+.list-icons.white li:before {
+  background-image: url("data:image/svg+xml;utf8,<svg width='15' height='11' viewBox='0 0 15 11' xmlns='http://www.w3.org/2000/svg'><path id='mask' d='M2 6l3.5 3.5L13 2' stroke-width='2' stroke='%23FFFFFF' fill='none' stroke-linecap='square'/></svg>");
+}
+
 .list-icons li:before {
   content: "";
   position: absolute;
@@ -3048,4 +3052,49 @@ svg#e1387936-eff1-41ca-bfe8-43c17323100ab {
   -moz-animation: flickerAnimation 2s infinite;
   -o-animation: flickerAnimation 2s infinite;
   animation: flickerAnimation 2s infinite;
+}
+
+.feature-box.evidence {
+  background: #fbf5f3;
+}
+
+.feature-box.dark {
+  background: #090909;
+  color: #fff;
+}
+
+.feature-box {
+  width: 100%;
+  padding: 50px 30px 40px 30px;
+  display: block;
+  float: left;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+  min-height: 445px;
+  will-change: transform;
+  color: #090909;
+  z-index: 1;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05),
+    0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonials-cite img {
+  max-width: 70px;
+  margin-right: 24px;
+}
+.testimonials-cite img {
+  border-radius: 100%;
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+.testimonials-cite .author {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.testimonials-cite span {
+  display: block;
 }
