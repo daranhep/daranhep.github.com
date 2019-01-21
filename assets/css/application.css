@@ -1471,11 +1471,11 @@ a.text-1:hover {
 .footer-about .title:before {
   content: "";
   position: absolute;
-  width: 26px;
-  height: 18px;
-  margin-left: -38px;
-  top: 4px;
-  background: url("../img/final3.svg");
+  width: 20px;
+  height: 16px;
+  margin-left: -35px;
+  top: 6px;
+  background: url("../img/svg/SVG/footer_logo.svg");
 }
 
 .footer-about .subline {
