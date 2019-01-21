@@ -92,8 +92,18 @@ button:-moz-focusring,
   border-color: #fff;
 }
 
+.black {
+  border-color: #090909;
+}
+
 .button-link:focus {
   outline: none;
+}
+
+.button-link-video.blue:hover {
+  color: #fff;
+  background-color: #2646ff;
+  border-color: #2646ff;
 }
 
 .button-link-video:hover {
