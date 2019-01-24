@@ -2447,6 +2447,10 @@ body.modal-open {
   }
 }
 
+.h-500 {
+  height: calc(100vw * 1.1);
+}
+
 @media (min-width: 768px) {
   .masonry-layout {
     margin-bottom: 15px;
