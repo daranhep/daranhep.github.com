@@ -235,51 +235,66 @@
             class="row pt-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-6 pb-1 pb-sm-2 pb-md-3 pb-lg-4"
           >
             <div class="col-12 col-lg-11 offset-lg-1 contact-intro">
-              <h1 class="mb-1 mb-md-2 mb-lg-3">Get in touch</h1>
-              <p class="text-1 mb-2 mb-md-3 mb-lg-4">
-                If you have a wedding in mind or are simply interested in
-                finding out more, get in touch and let’s get things moving.
-              </p>
-              <a
-                href="mailto:hi@theofficialwedding.com"
-                class="contact-link no-barba"
-                data-hover="hi@theofficialwedding.com"
-                >hi@theofficialwedding.com</a
-              >
-            </div>
-          </div>
-          <div
-            class="row pt-1 pt-sm-2 pt-lg-3 pt-xl-4 pb-2 pb-sm-3 pb-md-4 pb-lg-5 pb-xl-6 contact-more"
-          >
-            <div class="col-12 col-md-4 col-lg-4 offset-lg-1 mb-2 mb-md-0">
-              <h2 class="mb-1">Post and visit</h2>
-              <p
-                class="text-1"
-                itemscope
-                itemtype="http://schema.org/Organization"
-              >
-                <span itemprop="name" class="d-none">Ivo Mynttinen Design</span>
-                <span itemprop="streetAddress">filler</span>,
-                <span itemprop="postalCode">90763</span>
-                <span itemprop="addressLocality">filler</span>
-              </p>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-0">
-              <h2 class="mb-1">Follow Us</h2>
-              <a
-                class="text-1"
-                href="https://instagram.com/theofficialwedding"
-                target="_blank"
-                rel="noopener"
-                title="Follow us on instagram"
-                >@theofficialwedding</a
-              >
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <h2 class="mb-1">Phone Number</h2>
-              <a class="text-1" href="" title="Frequently asked questions"
-                >952-486-1555</a
-              >
+              <fieldset id="contact_form">
+                <div class="row">
+                  <span>Hi, my name is</span>
+                  <input
+                    type="text"
+                    required=""
+                    name="name"
+                    id="name"
+                    placeholder="Full Name"
+                    class="input-w-1 handler"
+                  />
+                </div>
+                <div class="row">
+                  <textarea
+                    name="message"
+                    required=""
+                    id="message"
+                    placeholder="How can I help you?"
+                    rows="1"
+                    class="handler"
+                  ></textarea>
+                </div>
+                <div class="row">
+                  <div class="select-style g g-1 p-r ui-sa">
+                    <select id="budget" name="budget" class="placeholder">
+                      <option selected="" disabled="" hidden="" value="Not Set"
+                        >Your Package</option
+                      >
+                      <option value="Radiant">Radiant</option>
+                      <option value="Marquise">Marquise</option>
+                      <option value="Diamond">Diamond</option>
+                      <option value="Not sure">Not sure yet</option>
+                    </select>
+                  </div>
+                  <div class="select-style g g-1 ui-sa">
+                    <select id="timeline" name="timeline" class="placeholder">
+                      <option selected="" disabled="" hidden="" value="Not Set"
+                        >How far out is your shoot?</option
+                      >
+                      <option value="Flexible">Flexible</option>
+                      <option value="2 weeks">2 weeks</option>
+                      <option value="2-4 weeks">1 month</option>
+                      <option value="2 months">2 months</option>
+                      <option value="3 or more months">3 or more months</option>
+                    </select>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="row">
+                  <span class="leading s-3">You can reach me at</span>
+                  <input
+                    type="email"
+                    required=""
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    class="input-w-2 handler"
+                  />
+                </div>
+              </fieldset>
             </div>
           </div>
           <div class="break-out contact-map"></div>
