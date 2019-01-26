@@ -1763,7 +1763,7 @@ a.text-1:hover {
 }
 
 .list-icons li {
-  padding-left: 45px;
+  padding-left: 30px;
   position: relative;
 }
 
@@ -3064,15 +3064,6 @@ svg#e1387936-eff1-41ca-bfe8-43c17323100ab {
   animation: flickerAnimation 2s infinite;
 }
 
-.feature-box.evidence {
-  background: #fbf5f3;
-}
-
-.feature-box.dark {
-  background: #090909;
-  color: #fff;
-}
-
 .feature-box {
   width: 100%;
   padding: 50px 30px 40px 30px;
@@ -3083,11 +3074,114 @@ svg#e1387936-eff1-41ca-bfe8-43c17323100ab {
   overflow: hidden;
   min-height: 445px;
   will-change: transform;
-  color: #090909;
+  color: #fff;
   z-index: 1;
-  border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05),
-    0 5px 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.feature-box:before,
+.feature-box:after {
+  position: absolute;
+  content: "";
+}
+
+.feature-box:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #2f2f4f;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.feature-box:before {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+.feature-box.evidence {
+  background-image: linear-gradient(134deg, #9872ee 0%, #44a7e6 100%);
+}
+
+.feature-box.evidence:before {
+  background: url("../images/sprites/sprite-home.svg") 0 -475px;
+  bottom: -28px;
+  right: -64px;
+  width: 196px;
+  height: 158px;
+}
+
+.feature-box.transcripts {
+  background-image: linear-gradient(134deg, #7497ee 0%, #c96968 100%);
+}
+
+.feature-box.witnesses {
+  background-image: linear-gradient(-45deg, #04ab28 0%, #00cc7e 100%);
+}
+
+.feature-box.mf {
+  background-image: linear-gradient(-44deg, #0dc0ab 0%, #21a4d1 100%);
+}
+
+.feature-box:hover {
+  box-shadow: 0 8px 30px rgba(47, 47, 79, 0.25);
+  transform: scale(1.04);
+  color: #fff;
+}
+
+.feature-box:hover:after {
+  opacity: 1;
+}
+
+.feature-box:hover:before {
+  filter: grayscale(1) brightness(3) opacity(0.3);
+}
+
+.feature-box:hover .tilt-inner {
+  transform: scale(0.965);
+}
+
+.feature-box:hover .link:after {
+  transform: translateX(3px);
+}
+
+.feature-box:active {
+  transform: scale(1.02);
+}
+
+.feature-box:active:after {
+  background: #222239;
+}
+
+.ie .feature-box:hover,
+.ie-edge .feature-box:hover {
+  transform: none;
+}
+
+.ie .feature-box:hover .tilt-inner,
+.ie-edge .feature-box:hover .tilt-inner {
+  transform: none;
+}
+
+.ie .feature-box:active,
+.ie-edge .feature-box:active {
+  transform: none;
+}
+
+.tilt-inner {
+  position: relative;
+  z-index: 4;
+  transition: 0.3s;
+  will-change: transform;
+}
+
+.feature-box ul {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5em;
 }
 
 .testimonials-cite img {
