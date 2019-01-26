@@ -2597,6 +2597,10 @@ body.modal-open {
     margin-top: -250px;
   }
 
+  .mt-250 {
+    margin-top: -250px;
+  }
+
   .project .image {
     height: 900px;
   }
