@@ -912,7 +912,7 @@ div:focus {
 }
 
 .white {
-  color: #fff !important;
+  color: #fff;
 }
 
 .dark {
