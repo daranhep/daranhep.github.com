@@ -76,7 +76,7 @@ button:-moz-focusring,
 
 .button-link {
   text-align: center;
-  font-size: calc(100vw / 21);
+  font-size: calc(100vw / 22);
   font-weight: 500;
   border-radius: 2px;
   border-width: 3px;
@@ -145,7 +145,7 @@ button:-moz-focusring,
     color: #fff;
   }
   .button-link {
-    font-size: 2.25rem;
+    font-size: 1.55rem;
     padding: 1rem 1.125rem;
     margin-right: 30px;
     min-width: 250px;
@@ -2089,13 +2089,13 @@ body.modal-open {
   margin-bottom: 0.625rem;
 }
 
-.poster-home .client:after {
+.client:after {
   content: "⟶";
-  color: #fff;
+  color: #2646ff;
   font-weight: 400;
   margin-left: 15px;
   transition: 0.3s;
-  position: absolute;
+  position: relative;
 }
 
 .work-stats .client:after {
@@ -3236,4 +3236,12 @@ textarea {
 
 textarea {
   width: 100%;
+}
+
+.button.blue {
+  color: rgb(38, 70, 255);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(38, 70, 255);
+  border-image: initial;
 }
