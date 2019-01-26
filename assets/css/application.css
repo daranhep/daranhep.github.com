@@ -907,6 +907,10 @@ div:focus {
   outline: none;
 }
 
+.white {
+  color: #fff !important;
+}
+
 .dark {
   color: #fff;
   background: #090909;
