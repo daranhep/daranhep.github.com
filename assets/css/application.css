@@ -250,6 +250,10 @@ button:-moz-focusring,
   .offset-md-1-end {
     margin-left: 9.5%;
   }
+
+  .offset-md-2 {
+    margin-left: 7.3333333333%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1743,6 +1747,18 @@ a.text-1:hover {
   content: "";
 }
 
+.icon-design:before {
+  background-position: 0 -560px;
+}
+
+.icon-development:before {
+  background-position: 0 -680px;
+}
+
+.icon-business:before {
+  background-position: 0 -600px;
+}
+
 .list {
   list-style-type: none;
   margin: 0;
@@ -1771,8 +1787,23 @@ a.text-1:hover {
   position: relative;
 }
 
+.list-icons2 li {
+  padding-left: 45px;
+  position: relative;
+}
+
 .list-icons.white li:before {
   background-image: url("data:image/svg+xml;utf8,<svg width='15' height='11' viewBox='0 0 15 11' xmlns='http://www.w3.org/2000/svg'><path id='mask' d='M2 6l3.5 3.5L13 2' stroke-width='2' stroke='%23FFFFFF' fill='none' stroke-linecap='square'/></svg>");
+}
+
+.list-icons2 li:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 0;
+  background-image: url(../img/svg/icons.svg);
 }
 
 .list-icons li:before {
@@ -2805,7 +2836,7 @@ body.modal-open {
 
 .contact-map {
   height: 100vw;
-  background: url("../img/gallery/DSC06621-lg_2x.jpg");
+  background: url("../img/couple7/Hannah-8452-lg_2x.jpg");
   background-size: cover;
   background-position: 45% center;
 }
@@ -3344,4 +3375,12 @@ textarea {
 
 button.button-link.white.button-link-video {
   min-width: 200px;
+}
+
+.note {
+  background: #f2f4ff;
+  padding: 2rem;
+  position: relative;
+  margin: 3rem 0;
+  color: #00093b;
 }
