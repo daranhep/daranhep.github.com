@@ -112,24 +112,9 @@ button:-moz-focusring,
 }
 
 .button-link:hover:after {
-  transform: translateX(5px);
+  transform: translateX(3px);
   color: #fff;
 }
-
-/* .button-link-video:after {
-  background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'> <g fill='none' fill-rule='evenodd' transform='translate(2 6)'> <polygon fill='black' fill-rule='nonzero' points='10 12.797 10 5 17.25 9.049' /> </g> </svg>");
-}
-
-.button-link:after {
-  width: 30px;
-  height: 30px;
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.2s;
-  transform: scale(1.4);
-} */
 
 .button-link {
   font-size: 1.325rem;
@@ -2096,7 +2081,7 @@ body.modal-open {
   content: "⟶";
   color: #2646ff;
   font-weight: 400;
-  margin-left: 5px;
+  margin-left: 4px;
   transition: 0.3s;
   position: relative;
 }
@@ -2127,7 +2112,7 @@ body.modal-open {
 }
 
 .poster-home a:hover .client:after {
-  transform: translateX(5px);
+  transform: translateX(3px);
 }
 
 .work-stats a:hover {
@@ -2135,7 +2120,7 @@ body.modal-open {
 }
 
 .work-stats a:hover .client:after {
-  transform: translateX(5px);
+  transform: translateX(3px);
   color: #000;
 }
 
