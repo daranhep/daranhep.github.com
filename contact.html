@@ -234,65 +234,71 @@
           <div
             class="row pt-2 pt-sm-3 pt-md-4 pt-lg-5 pt-xl-6 pb-1 pb-sm-2 pb-md-3 pb-lg-4"
           >
-            <div class="col-12 col-lg-11 offset-lg-1 contact-intro">
+            <div class="col-12 col-md-7 offset-lg-1 contact-intro">
               <fieldset id="contact_form">
                 <div class="row">
-                  <span>Hi, my name is</span>
-                  <input
-                    type="text"
-                    required=""
-                    name="name"
-                    id="name"
-                    placeholder="Full Name"
-                    class="input-w-1 handler"
-                  />
-                </div>
-                <div class="row">
-                  <textarea
-                    name="message"
-                    required=""
-                    id="message"
-                    placeholder="How can I help you?"
-                    rows="1"
-                    class="handler"
-                  ></textarea>
-                </div>
-                <div class="row">
-                  <div class="select-style g g-1 p-r ui-sa">
-                    <select id="budget" name="budget" class="placeholder">
-                      <option selected="" disabled="" hidden="" value="Not Set"
-                        >Your Package</option
-                      >
-                      <option value="Radiant">Radiant</option>
-                      <option value="Marquise">Marquise</option>
-                      <option value="Diamond">Diamond</option>
-                      <option value="Not sure">Not sure yet</option>
-                    </select>
+                  <div class="col-12 col-md-6 d-flex">
+                    <span class="d-none">Hi, my name is</span>
+                    <input
+                      type="text"
+                      required=""
+                      name="name"
+                      class="flex-grow"
+                      id="name"
+                      placeholder="Full Name"
+                      class="input-w-1 handler"
+                    />
                   </div>
-                  <div class="select-style g g-1 ui-sa">
-                    <select id="timeline" name="timeline" class="placeholder">
-                      <option selected="" disabled="" hidden="" value="Not Set"
-                        >How far out is your shoot?</option
+                  <div class="col-md-6 col-12 d-flex">
+                    <span class="d-none">and I'm interested in the</span>
+                    <div class="select-style g g-1 p-r ui-sa flex-grow">
+                      <select
+                        id="budget"
+                        name="budget"
+                        class="placeholder flex-grow"
                       >
-                      <option value="Flexible">Flexible</option>
-                      <option value="2 weeks">2 weeks</option>
-                      <option value="2-4 weeks">1 month</option>
-                      <option value="2 months">2 months</option>
-                      <option value="3 or more months">3 or more months</option>
-                    </select>
+                        <option
+                          selected=""
+                          disabled=""
+                          hidden=""
+                          value="Not Set"
+                          >Your Package</option
+                        >
+                        <option value="Radiant">Radiant Package</option>
+                        <option value="Marquise">Marquis Package</option>
+                        <option value="Diamond">Diamond Package</option>
+                        <option value="Not sure">Not sure yet</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="clearfix"></div>
                 </div>
                 <div class="row">
-                  <span class="leading s-3">You can reach me at</span>
-                  <input
-                    type="email"
-                    required=""
-                    name="email"
-                    id="email"
-                    placeholder="Email Address"
-                    class="input-w-2 handler"
-                  />
+                  <div class="col-12">
+                    <textarea
+                      data-autoresize
+                      name="message"
+                      required=""
+                      id="message"
+                      placeholder="How can I help you?"
+                      rows="1"
+                      class="handler"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 d-flex">
+                    <span class="d-none d-md-block leading s-3"
+                      >You can reach me at</span
+                    >
+                    <input
+                      type="email"
+                      required=""
+                      name="email"
+                      id="email"
+                      placeholder="Email Address"
+                      class="input-w-2 handler flex-grow"
+                    />
+                  </div>
                 </div>
               </fieldset>
             </div>

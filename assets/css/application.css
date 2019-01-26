@@ -464,6 +464,10 @@ button:-moz-focusring,
   display: block !important;
 }
 
+.d-inline-block {
+  display: inline-block !important;
+}
+
 .d-flex,
 .header,
 .mobile-menu-header,
@@ -3146,12 +3150,22 @@ textarea:focus {
   outline: 0;
   border-color: #2646ff;
 }
+
+.select-style {
+  border-bottom: 1px solid #d8d8d8;
+  overflow: hidden;
+  position: relative;
+}
+
+textarea {
+  overflow: auto;
+}
+
 .select-style select.placeholder {
   color: #999;
 }
 .select-style select {
   padding: 0 0 6px 5px;
-  width: 110%;
   border: none;
   box-shadow: none;
   background: 0 0;
@@ -3159,6 +3173,7 @@ textarea:focus {
   -webkit-appearance: none;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .select-style:after {
@@ -3217,4 +3232,8 @@ textarea:focus {
 
 .zoom:hover img {
   transform: scale(1.006);
+}
+
+textarea {
+  width: 100%;
 }
