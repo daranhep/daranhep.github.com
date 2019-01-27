@@ -3382,6 +3382,12 @@ button.button-link.white.button-link-video {
   min-width: 200px;
 }
 
+@media (max-width: 786px) {
+  button.button-link.white.button-link-video {
+    min-width: 167px;
+  }
+}
+
 .note {
   background: #f2f4ff;
   padding: 2rem;
