@@ -3522,3 +3522,8 @@ button.button-link.white.button-link-video {
     width: 100%;
   }
 }
+
+.testimonials-quote2 {
+  margin: 0 auto;
+  max-width: 100%;
+}
