@@ -3514,3 +3514,8 @@ button.button-link.white.button-link-video {
     grid-column: auto/span 4;
   }
 }
+@media (max-width: 768px) {
+  input#name {
+    margin-bottom: 50px;
+  }
+}
