@@ -883,6 +883,12 @@ button:-moz-focusring,
   }
 }
 
+@media (max-width: 767px) {
+  .ptt {
+    padding-top: 60px !important;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -2179,13 +2185,13 @@ body.modal-open {
 }
 
 .illustration-web {
-  background-image: url("../img/planning.png");
+  background-image: url("../img/svg/love-letter.png");
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .illustration-dev {
-  background-image: url("../img/album.png");
+  background-image: url("../img/svg/poem.png");
   background-repeat: no-repeat;
   background-position: left;
 }
