@@ -371,6 +371,11 @@ button:-moz-focusring,
   display: flex !important;
 }
 
+.testimonials-quote {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 .flex-column {
   flex-direction: column !important;
 }
