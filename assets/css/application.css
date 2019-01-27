@@ -3518,4 +3518,7 @@ button.button-link.white.button-link-video {
   input#name {
     margin-bottom: 50px;
   }
+  button#submit_btn {
+    width: 100%;
+  }
 }
