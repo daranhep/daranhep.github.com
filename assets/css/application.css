@@ -1767,7 +1767,11 @@ a.text-1:hover {
 }
 
 .icon-business:before {
-  background-position: 0 -600px;
+  background-position: 0 -280px;
+}
+
+.icon-real-estate:before {
+  background-position: 0 -320px;
 }
 
 .list {
