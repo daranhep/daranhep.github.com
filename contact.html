@@ -236,78 +236,80 @@
           >
             <div class="col-12 col-md-6 offset-md-2 contact-intro">
               <h1 class="mb-1 mb-md-2 mb-lg-3">Let’s talk</h1>
-              <fieldset id="contact_form">
-                <div class="row">
-                  <div class="col-12 col-md-6 d-flex">
-                    <span class="d-none">Hi, my name is</span>
-                    <input
-                      type="text"
-                      required=""
-                      name="name"
-                      class="flex-grow"
-                      id="name"
-                      placeholder="Full Name"
-                      class="input-w-1 handler"
-                    />
-                  </div>
-                  <div class="col-md-6 col-12 d-flex">
-                    <span class="d-none">and I'm interested in the</span>
-                    <div class="select-style g g-1 p-r ui-sa flex-grow">
-                      <select
-                        id="budget"
-                        name="budget"
-                        class="placeholder flex-grow"
-                      >
-                        <option
-                          selected=""
-                          disabled=""
-                          hidden=""
-                          value="Not Set"
-                          >Your Package</option
+              <form action="" method="post">
+                <fieldset id="contact_form">
+                  <div class="row">
+                    <div class="col-12 col-md-6 d-flex">
+                      <span class="d-none">Hi, my name is</span>
+                      <input
+                        type="text"
+                        required=""
+                        name="name"
+                        class="flex-grow"
+                        id="name"
+                        placeholder="Full Name"
+                        class="input-w-1 handler"
+                      />
+                    </div>
+                    <div class="col-md-6 col-12 d-flex">
+                      <span class="d-none">and I'm interested in the</span>
+                      <div class="select-style g g-1 p-r ui-sa flex-grow">
+                        <select
+                          id="budget"
+                          name="budget"
+                          class="placeholder flex-grow"
                         >
-                        <option value="Radiant">Radiant Cut</option>
-                        <option value="Marquise">Marquise Cut</option>
-                        <option value="Diamond">Heart Cut</option>
-                        <option value="Not sure">Not sure yet</option>
-                      </select>
+                          <option
+                            selected=""
+                            disabled=""
+                            hidden=""
+                            value="Not Set"
+                            >Your Package</option
+                          >
+                          <option value="Radiant">Radiant Cut</option>
+                          <option value="Marquise">Marquise Cut</option>
+                          <option value="Diamond">Heart Cut</option>
+                          <option value="Not sure">Not sure yet</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <textarea
-                      data-autoresize
-                      name="message"
-                      required=""
-                      id="message"
-                      placeholder="How can we help you?"
-                      rows="1"
-                      class="handler"
-                    ></textarea>
+                  <div class="row">
+                    <div class="col-12">
+                      <textarea
+                        data-autoresize
+                        name="message"
+                        required=""
+                        id="message"
+                        placeholder="How can we help you?"
+                        rows="1"
+                        class="handler"
+                      ></textarea>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 d-flex">
-                    <span class="d-none d-md-block leading s-3"
-                      >You can reach me at</span
-                    >
-                    <input
-                      type="email"
-                      required=""
-                      name="email"
-                      id="email"
-                      placeholder="Email Address"
-                      class="input-w-2 handler flex-grow"
-                    />
+                  <div class="row">
+                    <div class="col-12 d-flex">
+                      <span class="d-none d-md-block leading s-3"
+                        >You can reach me at</span
+                      >
+                      <input
+                        type="email"
+                        required=""
+                        name="email"
+                        id="email"
+                        placeholder="Email Address"
+                        class="input-w-2 handler flex-grow"
+                      />
+                    </div>
                   </div>
-                </div>
-                <button
-                  class="button-link blue button client arrow d-flex justify-content-center"
-                  id="submit_btn"
-                >
-                  Send Inquiry
-                </button>
-              </fieldset>
+                  <button
+                    class="button-link blue button client arrow d-flex justify-content-center"
+                    id="submit_btn"
+                  >
+                    Send Inquiry
+                  </button>
+                </fieldset>
+              </form>
             </div>
             <div class="col-md-3 offset-md-2 d-none d-md-block">
               <div class="note">
